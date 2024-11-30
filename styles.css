@@ -1,0 +1,150 @@
+/* Reset básico */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Adiciona um overlay escuro para melhorar a legibilidade do texto */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Ajusta a opacidade conforme necessário */
+    z-index: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Restante do estilo permanece o mesmo */
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #4a90e2;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #ddd;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.benefits-grid,
+.comparison-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit,
+.comparison-item {
+    flex: 1;
+    max-width: 300px;
+    background: #1a1a1d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.benefit:hover,
+.comparison-item:hover {
+    background: #2c2c31;
+}
+
+.benefit i,
+.comparison-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+form input {
+    background: #1a1a1d;
+    color: #fff;
+}
+
+form button {
+    background: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #357ABD;
+}
+
+.footer {
+    background: #1a1a1d;
+    padding: 20px;
+    text-align: center;
+}
